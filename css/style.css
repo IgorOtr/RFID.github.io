@@ -5,6 +5,26 @@
     font-family: Montserrat, Poppins, sans-serif;
 }
 
+.fundoModalForm {
+    height: 100vh;
+    width: 100vw;
+    background-color: #000000b0;
+    position: fixed;
+    z-index: 100000000000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.close_button {
+    position: absolute;
+    top: 14px;
+    right: 21px;
+    font-size: 20px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
 :root {
     --primary: #ebb333;
     --secondary: #FB9F38;
