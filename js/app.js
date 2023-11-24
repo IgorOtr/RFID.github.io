@@ -6,17 +6,17 @@ function closeModal() {
     modal.style.display = "none";
 }
 
-// window.onload = () => {
-//     setTimeout(() => {
-//         modal.style.display = "flex";
-//     }, 5000);
-// }
+window.onload = () => {
+    setTimeout(() => {
+        modal.style.display = "flex";
+    }, 5000);
+}
 
-// buttonOpenModal1.addEventListener('click', (e) => {
-//     e.preventDefault();
+buttonOpenModal1.addEventListener('click', (e) => {
+    e.preventDefault();
 
-//     modal.style.display = "flex";
-// });
+    modal.style.display = "flex";
+});
 
 buttonOpenModal.addEventListener('click', (e) => {
     e.preventDefault();
