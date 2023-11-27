@@ -11,6 +11,13 @@
     border-color: #ebb333;
 }
 
+.btn-check:focus+.btn-primary, .btn-primary:focus {
+    color: #000;
+    background-color: #d2a12f;
+    border-color: #d2a12f;
+    box-shadow: 0 0 0 0.25rem #d2a12f;
+}
+
 .main__screen {
     height: 100vh;
     background-image: url(../img/RFID/banner1.png);
@@ -663,3 +670,4 @@
         background-position-x: -830px;
     }
 }
+
