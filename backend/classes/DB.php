@@ -19,7 +19,7 @@ class DB {
 
             if ($dataInseted) {
 
-                return header('Location: https://api.whatsapp.com/send/?phone=552433442250&text&type=phone_number&app_absent=0');
+                return header('Location: https://api.whatsapp.com/send/?phone=5524998481122&text&type=phone_number&app_absent=0');
 
             } else {
 
