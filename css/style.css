@@ -11,6 +11,20 @@
     border-color: #ebb333;
 }
 
+.form-check-input:checked {
+    background-color: #ebb333;
+    border-color: #ebb333;
+}
+
+a {
+    color: #ebb333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #d2a12f;
+}
+
 .btn-check:focus+.btn-primary, .btn-primary:focus {
     color: #000;
     background-color: #d2a12f;
