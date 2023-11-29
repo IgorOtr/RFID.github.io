@@ -1,6 +1,25 @@
 <?php
 
+@session_start();
+
 class DB {
+
+    public static function showLeads()
+    {
+        require '../backend/db/connect.php';
+        
+        $selectData = $conn->prepare("SELECT * FROM leads");
+        $selectData->execute();
+
+        $data = $selectData->fetchAll();
+
+        // echo '<pre>';
+        // var_dump($data);
+        // echo '</pre>';
+        // die();
+
+        return $data;
+    }
 
     public static function GetLeads($nome, $email, $telefone, $date, $terms)
     {
@@ -25,5 +44,34 @@ class DB {
 
                 return header('Location: http://localhost/RFID/RFID/');
             }
+    }
+
+    public static function Login($email, $senha)
+    {
+        require '../db/connect.php';
+
+        $sql = "SELECT * FROM users WHERE user_email = :email AND user_password = :pass";
+        $auth_user = $conn->prepare($sql);
+        $auth_user->bindValue(':email',$email);
+        $auth_user->bindValue(':pass',$senha);
+
+        $auth_user->execute();
+
+        $auth_result = $auth_user->fetch(PDO::FETCH_ASSOC);
+
+        $rowCount = $auth_user->rowCount();
+
+        if ($rowCount > 0) {
+
+                $_SESSION["email"] = $auth_result["user_email"];
+                header('location: http://localhost/RFID/RFID/Admin');
+
+        } else {
+
+            $_SESSION['error-login'] = "Email e/ou senha inválidos.";
+
+            header('location: http://localhost/RFID/RFID/Admin/login.php');
+        }
+
     }
 }

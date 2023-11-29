@@ -1,0 +1,17 @@
+.form-outline .form-control:focus {
+    border-bottom: 2px solid #ebb333;
+
+}
+
+.form-outline .form-control:focus~.form-label {
+    color: #ebb333;
+}
+
+.form-control.form-control-lg {
+    border-radius: 0rem !important;
+}
+
+.bg-dark {
+    background-color: rgb(37, 37, 37) !important;
+}
+
