@@ -5,6 +5,12 @@
     font-family: Montserrat, Poppins, sans-serif;
 }
 
+.btn-primary:disabled, .btn-primary.disabled {
+    color: #000;
+    background-color: #ebb4338b;
+    border-color: #ebb4338b;
+}
+
 .btn-check:checked+.btn-primary, .btn-check:active+.btn-primary, .btn-primary:active, .btn-primary.active, .show>.btn-primary.dropdown-toggle {
     color: #000;
     background-color: #ebb333;

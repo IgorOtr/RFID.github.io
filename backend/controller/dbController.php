@@ -11,6 +11,11 @@ if (isset($_POST['get_data_from_form'])) {
     $email = $_POST['lead_email'];
     $tel = $_POST['lead_telefone'];
     $terms = isset($_POST['terms']) ? $_POST['terms'] : '';
+
+    if ($terms == '') {
+        header("Location: http://localhost/RFID/RFID/");
+    }
+
     $date = date('d/m/Y H:i:s');
 
     // die();

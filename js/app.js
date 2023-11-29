@@ -2,38 +2,16 @@ const modal = document.querySelector(".fundoModalForm");
 const buttonOpenModal = document.querySelector('.openModalButton');
 const wpp_icon = document.querySelector('.wpp-icon');
 
-// function closeModal() {
-//     modal.style.display = "none";
-// }
-
-// window.onload = () => {
-//     setTimeout(() => {
-//         modal.style.display = "flex";
-//     }, 5000);
-// }
-
-// buttonOpenModal1.addEventListener('click', (e) => {
-//     e.preventDefault();
-
-//     modal.style.display = "flex";
-// });
-
 buttonOpenModal.addEventListener('click', (e) => {
     e.preventDefault();
 
     modal.style.display = "flex";
 });
 
-// wpp_icon.addEventListener('click', (e) => {
-//     e.preventDefault();
-
-//     modal.style.display = "flex";
-// });
-
 document.addEventListener('scroll', () => {
     var posicaoY = window.pageYOffset;
 
-    console.log(posicaoY);
+    // console.log(posicaoY);
     
     if (posicaoY >= 0 && posicaoY <= 700 ) {
 

@@ -92,15 +92,15 @@
                             <div class="col-6">
                                 <div class="mb-3">
                                     <label for="exampleFormControlInput1" class="form-label">Nome Completo:</label>
-                                    <input name="lead_nome" type="text" class="form-control"
-                                        id="exampleFormControlInput1" required>
+                                    <input name="lead_nome" id="lead_nome" type="text" class="form-control"
+                                        id="exampleFormControlInput1" onchange="validadeInputName()" required>
                                 </div>
                             </div>
                             <div class="col-6">
                                 <div class="mb-3">
                                     <label for="exampleFormControlInput1" class="form-label">E-mail:</label>
-                                    <input name="lead_email" type="email" class="form-control"
-                                        id="exampleFormControlInput1" required>
+                                    <input name="lead_email" id="lead_email" type="email" class="form-control"
+                                        id="exampleFormControlInput1" onchange="validadeTnputEmail()" required>
                                 </div>
                             </div>
                         </div>
@@ -109,19 +109,19 @@
                                 <div class="mb-3">
                                     <label for="exampleFormControlInput1" class="form-label">Telefone /
                                         Whatsapp:</label>
-                                    <input name="lead_telefone" type="text" class="form-control"
-                                        id="exampleFormControlInput1" placeholder="Ex.: (xx) xxxxx-xxxx" required>
+                                    <input name="lead_telefone" id="lead_telefone" type="text" class="form-control"
+                                        id="exampleFormControlInput1" placeholder="Ex.: (xx) xxxxx-xxxx" required onchange="validadeInputTel()"> 
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-check">
-                                    <input class="form-check-input" name="terms" type="checkbox" value="accepted" id="flexCheckDefault" required>
+                                    <input class="form-check-input" name="terms" id="myCheckbox" type="checkbox" value="accepted" id="flexCheckDefault" required>
                                     <label class="form-check-label" for="flexCheckDefault">Concordo com os termos de <a target="_blank" href="https://quick.com.br/wp-content/uploads/2022/08/Poli%CC%81tica-de-Privacidade-QUICK-2020.pdf">Política de Privacidade</a></label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="mb-3">
-                                    <button class="btn btn-primary w-100 mt-3" name="get_data_from_form"
+                                    <button id="get_data_from_form" class="btn btn-primary w-100 mt-3" name="get_data_from_form"
                                         type="submit">Receber Mais Informações</button>
                                 </div>
                             </div>
