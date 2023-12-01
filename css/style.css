@@ -693,7 +693,27 @@ a:hover {
     }
 
     .main__screen {
-        background-position-x: -830px;
+        background-position-x: -610px;
+        padding-top: 140px;
+    }
+
+    .wordsCol {
+        height: 300px;
+    }
+
+    .wordsText {
+        height: 160px;
+    }
+
+    .logoQuick {
+        padding-top: 35px;
+    }
+
+    .col-center-footer {
+        text-align: center;
+    }
+    .col-center-footer a {
+        text-align: center !important;
     }
 }
 
